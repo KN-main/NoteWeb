@@ -62,6 +62,8 @@ def note():
     db.session.commit()
     return redirect(url_for('home'))
 
+db.create_all()
+
 if __name__ == '__main__':
     db.create_all()
     app.run(debug=True)
